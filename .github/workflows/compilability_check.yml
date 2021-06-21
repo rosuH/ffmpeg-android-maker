@@ -18,7 +18,7 @@ jobs:
       - name: Executing the script
         run: |
           export ANDROID_SDK_HOME=$ANDROID_HOME
-          ./ffmpeg-android-maker.sh -all-free -all-gpl -android=18 -abis=${{ matrix.abi }}
+          ./ffmpeg-android-maker.sh -all-free -all-gpl -android=19 -abis=${{ matrix.abi }}
 
       - uses: actions/upload-artifact@v2
         with:
